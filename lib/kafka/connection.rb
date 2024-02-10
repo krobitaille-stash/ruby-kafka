@@ -83,7 +83,7 @@ module Kafka
     #   encoded and written.
     #
     # @return [Object] the response.
-    def send_request(request, read_timeout: read_timeout)
+    def send_request(request, read_timeout:)
       api_name = Protocol.api_name(request.api_key)
 
       # Default notification payload.
