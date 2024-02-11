@@ -27,8 +27,8 @@ module Kafka
   # The notification also includes the duration of the request.
   #
   class Connection
-    SOCKET_TIMEOUT = 20
-    CONNECT_TIMEOUT = 20
+    SOCKET_TIMEOUT = 10
+    CONNECT_TIMEOUT = 10
 
     # Time after which an idle connection will be reopened.
     IDLE_TIMEOUT = 60 * 5
